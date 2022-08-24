@@ -1,0 +1,3 @@
+You know what is quine ? It produces a copy of its own source code as its only output, just like DNA!
+By introducing intron, which is a part of a quine that serves no purpose in producing output, things are getting interesting... 
+Try to reveal the secrets hidden in my DNA!

@@ -1,0 +1,10 @@
+version: '3'
+services:
+  bot-ctf: 
+    build: .
+    container_name: bot-ctf
+    ports:
+      - 3141:80
+    extra_hosts:
+      - "sandbox.local:127.0.0.1"
+

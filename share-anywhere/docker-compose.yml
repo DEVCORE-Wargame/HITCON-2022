@@ -1,0 +1,25 @@
+version: '3'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports: 
+      - "0.0.0.0:8989:80"
+    restart: always
+    depends_on:
+      - mysql
+
+  mysql:
+    image: mariadb:10.9.1-rc-jammy
+    volumes:
+      - "./sql:/docker-entrypoint-initdb.d:ro"
+    restart: always
+    environment:
+      LANG: C.UTF-8
+      MYSQL_ROOT_PASSWORD: VAbz24BnR0Ia7ipKUQsoQkz
+      MYSQL_DATABASE: web
+      MYSQL_USER: web_user
+      MYSQL_PASSWORD: MzM0NmEzNWM4N2JhMWM4YTc0NGVi
+    command: mysqld

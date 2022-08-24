@@ -1,0 +1,23 @@
+body {
+  font-family: sans-serif;
+}
+
+#math-button {
+  width: 80px;
+}
+
+.title {
+  font-size: 1.8rem;
+  text-align: center;
+}
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+}
+.buttons {
+  margin: 0 auto;
+}
+.notes {
+  width: 500px;
+  height: 300px;
+}
